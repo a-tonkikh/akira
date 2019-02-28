@@ -1,0 +1,54 @@
+.loader {
+  animation: disappear 1s linear, red 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2s, 1s;
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.loader__wrap {
+  animation: growth 3s 1 ease-out;
+  height: 800px;
+  width: 800px;
+}
+
+.loader__explosion {
+  animation: shake 2s infinite linear, fireball 3s 1 ease-out;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  z-index: 101;
+
+  &::before, &::after {
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    height: 100%;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 100;
+  }
+
+  &::after {
+    animation: shockwave 2.5s 1 ease-out;
+    animation-delay: 0.5s;
+  }
+  &::before {
+    animation: therminal 2s 1 ease-out;
+    animation-delay: 1s;
+  }
+}

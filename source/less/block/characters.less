@@ -1,0 +1,307 @@
+.characters {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.characters__title {
+  bottom: 50%;
+  color: #fff;
+  font-size: 200px;
+  font-weight: 700;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.characters__list {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 190px 190px 190px;
+  grid-gap: 50px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.characters__item {
+  background-image: linear-gradient(to right, #DB7A57 8%, #DC694C 60%, #E09C94 74%, #E09285 77%, #D36F45 89%, #DC724C 97%);
+  border-radius: 3px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+
+  &::before, &::after {
+    background-image: linear-gradient(to right, #50303A 1%, #5B3C4D 5%, #6E526F 29%, #6E526F 65%, #8D7481 77%, #7A576E 97%);
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+    content: "";
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  &::before {
+    border-radius: 3px 3px 0 0;
+    top: -1px;
+  }
+
+  &::after {
+    border-radius: 0 0 3px 3px;
+    bottom: -1px;
+  }
+
+  &:nth-child(even) {
+    animation: float 2s infinite ease-out;
+    animation-direction: alternate;
+  }
+
+  &:nth-child(odd) {
+    animation: floatReverse 2s infinite ease-in;
+    animation-direction: alternate;
+  }
+
+  &:nth-child(3n) {
+    animation: floatReverse 1.5s infinite ease-out;
+    animation-direction: alternate;
+  }
+
+  &:nth-child(10n) {
+    animation: float 1.5s infinite ease-in;
+    animation-direction: alternate;
+  }
+
+  &:hover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & .characters__container {
+      opacity: 0;
+    }
+  }
+
+  &--kaneda {
+    grid-column-start: 2;
+
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/kaneda-manga.jpg");
+    }
+  }
+
+  &--tetsuo {
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/manga7.jpg");
+    }
+  }
+
+  &--kei {
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/kei.jpg");
+    }
+  }
+
+  &--colonel {
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/colonel.jpg");
+    }
+  }
+
+  &--onishi {
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/onishi.jpg");
+    }
+  }
+
+  &--nezu {
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/nezu.jpg");
+    }
+  }
+
+  &--ryusaku {
+    grid-column-end: 9;
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/ruy.jpg");
+    }
+  }
+
+  &--masaru {
+    grid-column-start: 1;
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/masaru.jpg");
+    }
+  }
+
+  &--kiyoko {
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/kiyoko.jpg");
+    }
+  }
+  &--takashi {
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/takashi.jpg");
+    }
+  }
+
+  &--yamagata {
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/yamagata.jpg");
+    }
+  }
+
+  &--keisuke {
+    grid-column-start: 7;
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/kaisuke.jpg");
+    }
+  }
+
+  &--joker {
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/joker.jpg");
+    }
+  }
+
+  &--juvenile {
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/juvinallea.jpg");
+    }
+  }
+
+  &--yamada {
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/luthenant1.jpg");
+    }
+  }
+
+  &--miyako {
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/miyako.jpg");
+    }
+  }
+
+  &--kaori {
+    grid-column-start: 7;
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/kaori1.jpg");
+    }
+  }
+
+  &--chiyoko {
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/chioko.jpg");
+    }
+  }
+
+  &--capitan {
+    &:hover {
+      background-image: linear-gradient(to right, rgba(219, 122, 87, 0.1) 1%, rgba(220, 105, 76, 0.1) 5%, rgba(224, 156, 148, 0.1) 29%, rgba(224, 146, 133, 0.3) 65%, rgba(211, 111, 69, 0.1) 77%, rgba(220, 114, 76, 0.1) 97%), url("../img/char1.png");
+    }
+  }
+}
+
+.characters__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  width: 88px;
+}
+
+.characters__name {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-bottom: none;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  padding: 3px 0;
+  text-transform: uppercase;
+  width: 100%;
+
+  &--number {
+    width: 76%;
+  }
+
+  &--akira {
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 30px;
+    transition-duration: 0.3s;
+    opacity: 0;
+  }
+}
+
+.characters__number {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-bottom: none;
+  border-right: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 3px 0;
+  width: 24%;
+}
+
+.characters__year {
+  background-color: #EED8AB;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 3px 0;
+  width: 100%;
+}
+
+.characters__akira {
+  background-image: url("../img/chair.png");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: -1px;
+  cursor: pointer;
+  height: 470px;
+  left: 0;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  transition-duration: 0.2s;
+  width: 400px;
+  z-index: 10;
+
+  &:hover {
+    background-image: url("../img/akira-chair.png");
+    transition-duration: 0.2s;
+  }
+
+  &:hover .characters__name--akira {
+    opacity: 0.8;
+    transition-duration: 0.3s;
+  }
+}

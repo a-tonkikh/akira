@@ -1,0 +1,1030 @@
+.sun {
+  height: 137px;
+  left: 0;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 137px;
+  z-index: 10;
+}
+
+.sun__elipse {
+  height: 137px;
+  position: relative;
+  width: 137px;
+  z-index: 10;
+}
+
+.sun__oval {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+
+  & circle {
+    animation-name: dash;
+    animation-duration: 1s;
+    animation-delay: 2.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    fill: #FE0201;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+  }
+}
+
+.sun__beam {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+
+  & path {
+    fill: #FE0201;
+    animation-name: dash;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+.sun__front {
+  & .sun__beam {
+    z-index: 6;
+
+    & path {
+      animation-delay: 2.5s;
+      animation-duration: 1s;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+    }
+
+    &--1 {
+      top: 129px;
+      left: 78px;
+    }
+
+    &--2 {
+      top: 119px;
+      left: 98px;
+    }
+
+    &--3 {
+      top: 108px;
+      left: 108px;
+    }
+
+    &--4 {
+      top: 98px;
+      left: 118px;
+    }
+
+    &--5 {
+      top: 89px;
+      left: 127px;
+    }
+
+    &--6 {
+      bottom: 24px;
+      left: 124px;
+    }
+
+    &--7 {
+      bottom: 49px;
+      left: 125px;
+    }
+
+    &--8 {
+      bottom: 82px;
+      left: 128px;
+    }
+
+    &--9 {
+      bottom: 95px;
+      left: 118px;
+    }
+
+    &--10 {
+      bottom: 114px;
+      left: 89px;
+    }
+
+    &--11 {
+      bottom: 123px;
+      right: 32px;
+    }
+
+    &--12 {
+      bottom: 116px;
+      right: 87px;
+    }
+
+    &--13 {
+      bottom: 104px;
+      right: 113px;
+    }
+
+    &--14 {
+      bottom: 90px;
+      right: 125px;
+    }
+
+    &--15 {
+      bottom: 70px;
+      right: 132px;
+    }
+
+    &--16 {
+      top: 69px;
+      right: 132px;
+    }
+
+    &--17 {
+      top: 91px;
+      right: 125px;
+    }
+
+    &--18 {
+      top: 114px;
+      right: 104px;
+    }
+
+    &--19 {
+      top: 125px;
+      right: 82px;
+    }
+
+    &--20 {
+      top: 129px;
+      left: 11px;
+    }
+  }
+}
+
+.sun__second {
+  & .sun__beam {
+    z-index: 5;
+
+    & path {
+      animation-duration: 2s;
+      animation-delay: 2.8s;
+      stroke-dasharray: 2000;
+      stroke-dashoffset: 2000;
+    }
+
+    &--1 {
+      top: 126px;
+      left: 32px;
+    }
+
+    &--2 {
+      top: 124px;
+      left: 87px;
+    }
+
+    &--3 {
+      top: 97px;
+      left: 102px;
+    }
+
+    &--4 {
+      top: 109px;
+      left: 96px;
+    }
+
+    &--5 {
+      top: 88px;
+      left: 107px;
+    }
+
+    &--6 {
+      top: 86px;
+      left: 111px;
+    }
+
+    &--7 {
+      top: 84px;
+      left: 112px;
+    }
+
+    &--8 {
+      top: 76px;
+      left: 122px;
+    }
+
+    &--9 {
+      top: 72px;
+      left: 115px;
+    }
+
+    &--10 {
+      top: 62px;
+      left: 119px;
+    }
+
+    &--11 {
+      top: 14px;
+      left: 118px;
+    }
+
+    &--12 {
+      bottom: 81px;
+      left: 115px;
+    }
+
+    &--13 {
+      bottom: 102px;
+      left: 103px;
+    }
+
+    &--14 {
+      bottom: 110px;
+      left: 91px;
+    }
+
+    &--15 {
+      bottom: 112px;
+      left: 82px;
+    }
+
+    &--16 {
+      bottom: 113px;
+      right: 47px;
+    }
+
+    &--17 {
+      bottom: 114px;
+      right: 80px;
+    }
+
+    &--18 {
+      bottom: 110px;
+      right: 93px;
+    }
+
+    &--19 {
+      bottom: 96px;
+      right: 111px;
+    }
+
+    &--20 {
+      bottom: 87px;
+      right: 123px;
+    }
+
+    &--21 {
+      bottom: 45px;
+      right: 123px;
+    }
+
+    &--22 {
+      bottom: 22px;
+      right: 120px;
+    }
+
+    &--23 {
+      top: 76px;
+      right: 121px;
+    }
+
+    &--24 {
+      top: 87px;
+      right: 118px;
+    }
+
+    &--25 {
+      top: 95px;
+      right: 115px;
+    }
+
+    &--26 {
+      top: 100px;
+      right: 101px;
+    }
+
+    &--27 {
+      top: 110px;
+      right: 92px;
+    }
+
+    &--28 {
+      top: 115px;
+      right: 66px;
+    }
+  }
+}
+
+.sun__third {
+  & .sun__beam {
+    z-index: 4;
+
+    & path {
+      animation-duration: 3s;
+      animation-delay: 3.1s;
+      stroke-dasharray: 3000;
+      stroke-dashoffset: 3000;
+    }
+
+    &--1 {
+      top: 120px;
+      left: 43px;
+    }
+
+    &--2 {
+      top: 126px;
+      left: 81px;
+    }
+
+    &--3 {
+      top: 125px;
+      left: 88px;
+    }
+
+    &--4 {
+      top: 107px;
+      left: 91px;
+    }
+
+    &--5 {
+      top: 110px;
+      left: 94px;
+    }
+
+    &--6 {
+      top: 111px;
+      left: 106px;
+    }
+
+    &--7 {
+      top: 109px;
+      left: 103px;
+    }
+
+    &--8 {
+      top: 96px;
+      left: 119px;
+    }
+
+    &--9 {
+      top: 88px;
+      left: 121px;
+    }
+
+    &--10 {
+      top: 79px;
+      left: 126px;
+    }
+
+    &--11 {
+      top: 70px;
+      left: 126px;
+    }
+
+    &--12 {
+      top: 19px;
+      left: 112px;
+    }
+
+    &--13 {
+      top: -58px;
+      left: 128px;
+    }
+
+    &--14 {
+      bottom: 78px;
+      left: 110px;
+    }
+
+    &--15 {
+      bottom: 90px;
+      left: 120px;
+    }
+
+    &--16 {
+      bottom: 93px;
+      left: 102px;
+    }
+
+    &--17 {
+      bottom: 88px;
+      left: 101px;
+    }
+
+    &--18 {
+      bottom: 110px;
+      left: 95px;
+    }
+
+    &--19 {
+      bottom: 114px;
+      left: 90px;
+    }
+
+    &--20 {
+      bottom: 128px;
+      left: 71px;
+    }
+
+    &--21 {
+      bottom: 124px;
+      left: 56px;
+    }
+
+    &--22 {
+      bottom: 124px;
+      right: 89px;
+    }
+
+    &--41 {
+      bottom: 124px;
+      left: 77px;
+    }
+
+    &--23 {
+      bottom: 115px;
+      right: 83px;
+    }
+
+    &--24 {
+      bottom: 111px;
+      right: 106px;
+    }
+
+    &--25 {
+      bottom: 101px;
+      right: 96px;
+    }
+
+    &--26 {
+      bottom: 95px;
+      right: 115px;
+    }
+
+    &--27 {
+      bottom: 86px;
+      right: 124px;
+    }
+
+    &--28 {
+      bottom: 82px;
+      right: 126px;
+    }
+
+    &--29 {
+      bottom: 6px;
+      right: 129px;
+    }
+
+    &--30 {
+      top: 56px;
+      right: 121px;
+    }
+
+    &--31 {
+      top: 83px;
+      right: 127px;
+    }
+
+    &--32 {
+      top: 68px;
+      right: 105px;
+    }
+
+    &--33 {
+      top: 87px;
+      right: 110px;
+    }
+
+    &--34 {
+      top: 90px;
+      right: 92px;
+    }
+
+    &--35 {
+      top: 103px;
+      right: 106px;
+    }
+
+    &--36 {
+      top: 113px;
+      right: 95px;
+    }
+
+    &--37 {
+      top: 114px;
+      right: 92px;
+    }
+
+    &--38 {
+      top: 123px;
+      right: 80px;
+    }
+
+    &--39 {
+      top: 126px;
+      right: 78px;
+    }
+
+    &--40 {
+      top: 125px;
+      right: 67px;
+    }
+  }
+}
+
+.sun__forth {
+  & .sun__beam {
+    z-index: 3;
+
+    & path {
+      animation-duration: 4s;
+      animation-delay: 2.5s;
+      stroke-dasharray: 4000;
+      stroke-dashoffset: 4000;
+    }
+
+    &--1 {
+      top: 129px;
+      left: 76px;
+    }
+
+    &--2 {
+      top: 124px;
+      left: 86px;
+    }
+
+    &--3 {
+      top: 116px;
+      left: 88px;
+    }
+
+    &--4 {
+      top: 117px;
+      left: 87px;
+    }
+
+    &--5 {
+      top: 108px;
+      left: 102px;
+    }
+
+    &--6 {
+      top: 102px;
+      left: 113px;
+    }
+
+    &--7 {
+      top: 96px;
+      left: 115px;
+    }
+
+    &--8 {
+      top: 99px;
+      left: 111px;
+    }
+
+    &--9 {
+      top: 99px;
+      left: 120px;
+    }
+
+    &--10 {
+      top: 87px;
+      left: 123px;
+    }
+
+    &--11 {
+      top: 73px;
+      left: 129px;
+    }
+
+    &--12 {
+      top: 66px;
+      left: 132px;
+    }
+
+    &--13 {
+      bottom: 55px;
+      left: 127px;
+    }
+
+    &--14 {
+      bottom: 73px;
+      left: 130px;
+    }
+
+    &--15 {
+      bottom: 90px;
+      left: 117px;
+    }
+
+    &--16 {
+      bottom: 93px;
+      left: 122px;
+    }
+
+    &--17 {
+      bottom: 93px;
+      left: 103px;
+    }
+
+    &--18 {
+      bottom: 110px;
+      left: 96px;
+    }
+
+    &--19 {
+      bottom: 114px;
+      left: 97px;
+    }
+
+    &--20 {
+      bottom: 120px;
+      left: 87px;
+    }
+
+    &--21 {
+      bottom: 127px;
+      left: 80px;
+    }
+
+    &--22 {
+      bottom: 128px;
+      left: 73px;
+    }
+
+    &--23 {
+      bottom: 127px;
+      left: 72px;
+    }
+
+    &--24 {
+      bottom: 128px;
+      right: 71px;
+    }
+
+    &--25 {
+      bottom: 120px;
+      right: 91px;
+    }
+
+    &--26 {
+      bottom: 117px;
+      right: 97px;
+    }
+
+    &--27 {
+      bottom: 111px;
+      right: 105px;
+    }
+
+    &--28 {
+      bottom: 116px;
+      right: 104px;
+    }
+
+    &--29 {
+      bottom: 109px;
+      right: 105px;
+    }
+
+    &--30 {
+      bottom: 100px;
+      right: 110px;
+    }
+
+    &--31 {
+      bottom: 97px;
+      right: 116px;
+    }
+
+    &--32 {
+      bottom: 95px;
+      right: 119px;
+    }
+
+    &--33 {
+      bottom: 84px;
+      right: 116px;
+    }
+
+    &--34 {
+      bottom: 76px;
+      right: 125px;
+    }
+
+    &--35 {
+      bottom: 47px;
+      right: 128px;
+    }
+
+    &--36 {
+      bottom: -62px;
+      right: 129px;
+    }
+
+    &--37 {
+      top: 71px;
+      right: 127px;
+    }
+
+    &--38 {
+      top: 93px;
+      right: 119px;
+    }
+
+    &--39 {
+      top: 96px;
+      right: 113px;
+    }
+
+    &--40 {
+      top: 99px;
+      right: 112px;
+    }
+
+    &--41 {
+      top: 107px;
+      right: 108px;
+    }
+
+    &--42 {
+      top: 121px;
+      right: 94px;
+    }
+
+    &--43 {
+      top: 125px;
+      right: 79px;
+    }
+
+    &--44 {
+      top: 129px;
+      right: 79px;
+    }
+
+    &--45 {
+      top: 131px;
+      right: 73px;
+    }
+
+    &--46 {
+      top: 131px;
+      right: 60px;
+    }
+  }
+}
+
+.sun__back {
+  & .sun__beam {
+    z-index: 2;
+
+    & path {
+      animation-duration: 5s;
+      animation-delay: 4.1s;
+      stroke-dasharray: 5000;
+      stroke-dashoffset: 5000;
+    }
+
+    &--1 {
+      top: 129px;
+      left: 39px;
+    }
+
+    &--2 {
+      top: 125px;
+      left: 75px;
+    }
+
+    &--3 {
+      top: 120px;
+      left: 79px;
+    }
+
+    &--4 {
+      top: 120px;
+      left: 93px;
+    }
+
+    &--5 {
+      top: 110px;
+      left: 106px;
+    }
+
+    &--6 {
+      top: 101px;
+      left: 103px;
+    }
+
+    &--7 {
+      top: 98px;
+      left: 117px;
+    }
+
+    &--8 {
+      top: 95px;
+      left: 118px;
+    }
+
+    &--9 {
+      top: 90px;
+      left: 111px;
+    }
+
+    &--10 {
+      top: 87px;
+      left: 123px;
+    }
+
+    &--11 {
+      top: 85px;
+      left: 126px;
+    }
+
+    &--12 {
+      top: 78px;
+      left: 130px;
+    }
+
+    &--13 {
+      top: 67px;
+      left: 130px;
+    }
+
+    &--14 {
+      top: 41px;
+      left: 131px;
+    }
+
+    &--15 {
+      top: -86px;
+      left: 125px;
+    }
+
+    &--16 {
+      bottom: 81px;
+      left: 124px;
+    }
+
+    &--17 {
+      bottom: 77px;
+      left: 120px;
+    }
+
+    &--18 {
+      bottom: 89px;
+      left: 118px;
+    }
+
+    &--19 {
+      bottom: 96px;
+      left: 113px;
+    }
+
+    &--20 {
+      bottom: 102px;
+      left: 106px;
+    }
+
+    &--21 {
+      bottom: 114px;
+      left: 100px;
+    }
+
+    &--22 {
+      bottom: 114px;
+      left: 96px;
+    }
+
+    &--23 {
+      bottom: 118px;
+      left: 97px;
+    }
+
+    &--24 {
+      bottom: 109px;
+      left: 93px;
+    }
+
+    &--25 {
+      bottom: 123px;
+      left: 84px;
+    }
+
+    &--26 {
+      bottom: 128px;
+      left: 77px;
+    }
+
+    &--27 {
+      bottom: 128px;
+      left: 64px;
+    }
+
+    &--28 {
+      bottom: 128px;
+      left: 19px;
+    }
+
+    &--29 {
+      bottom: 126px;
+      right: 76px;
+    }
+
+    &--30 {
+      bottom: 109px;
+      right: 91px;
+    }
+
+    &--31 {
+      bottom: 114px;
+      right: 99px;
+    }
+
+    &--32 {
+      bottom: 110px;
+      right: 103px;
+    }
+
+    &--33 {
+      bottom: 109px;
+      right: 96px;
+    }
+
+    &--34 {
+      bottom: 98px;
+      right: 104px;
+    }
+
+    &--35 {
+      bottom: 89px;
+      right: 119px;
+    }
+
+    &--36 {
+      bottom: 85px;
+      right: 122px;
+    }
+
+    &--37 {
+      bottom: 79px;
+      right: 125px;
+    }
+
+    &--38 {
+      top: 4px;
+      right: 132px;
+    }
+
+    &--39 {
+      top: 56px;
+      right: 129px;
+    }
+
+    &--40 {
+      top: 61px;
+      right: 123px;
+    }
+
+    &--41 {
+      top: 95px;
+      right: 114px;
+    }
+
+    &--42 {
+      top: 105px;
+      right: 112px;
+    }
+
+    &--43 {
+      top: 109px;
+      right: 107px;
+    }
+
+    &--44 {
+      top: 115px;
+      right: 96px;
+    }
+
+    &--45 {
+      top: 124px;
+      right: 90px;
+    }
+
+    &--46 {
+      top: 125px;
+      right: 84px;
+    }
+
+    &--47 {
+      top: 122px;
+      right: 77px;
+    }
+
+    &--48 {
+      top: 128px;
+      right: 69px;
+    }
+  }
+}

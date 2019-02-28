@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Akira</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="akira, anime, manga">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async></script>
+</head>
+
+<body>
+  <header>
+    <div class="main-nav main-nav--closed">
+      <div class="main-nav__top">
+        <button type="button" class="main-nav__menu burger--squeeze" id="hamburger-menu">
+          <span class="main-nav__burger-box">
+            <span class="main-nav__burger-inner">
+              <span class="visually-hidden">Menu</span>
+            </span>
+          </span>
+        </button>
+      </div>
+      <nav class="main-nav__navigation">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Neo-Tokyo</a></li>
+          <li class="main-nav__item"><a href="#">Story</a></li>
+          <li class="main-nav__item"><a href="characters.html">Characters</a></li>
+          <li class="main-nav__item"><a href="#">Manga vs Anime</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="loader">
+      <div class="loader__wrap">
+      <div class="loader__explosion">
+      </div>
+      </div>
+    </div>
+    <div class="sun">
+      <div class="sun__elipse">
+        <div class="sun__oval">
+          <svg width="139" height="138" viewBox="0 0 139 138" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+          <circle cx="69.5" cy="69" r="68.5"/>
+          </svg>
+        </div>
+        <div class="sun__front">
+          <div class="sun__beam sun__beam--1">
+            <svg width="20" height="291" viewBox="0 0 20 291" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1 226.5V0.5H4L18.5 289L11 281L8 218L1 226.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--2">
+            <svg width="76" height="174" viewBox="0 0 76 174" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M50.5 160.5L1 6L7.5 1L40.5 80L37 84.5L58 142.5H64L74.5 172.5L50.5 160.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--3">
+            <svg width="140" height="257" viewBox="0 0 140 257" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M121 244L1.5 5L5 1.5L139.5 220.5V256L121 244Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--4">
+            <svg width="133" height="145" viewBox="0 0 133 145" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M106.5 127L1 7.5V1.5L132.5 122.5V143L114 127H106.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--5">
+            <svg width="186" height="123" viewBox="0 0 186 123" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M100 72.5L0.5 4V1.5L92 53.5H100L182 100L185 122L145 100L142 90L110 69.5L100 72.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--6">
+            <svg width="124" height="42" viewBox="0 0 124 42" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M114 40.5L0.5 9V1.5L123 25L114 40.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--7">
+            <svg width="175" height="36" viewBox="0 0 175 36" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M157 1.5L1 8V14L174 35L157 1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--8">
+            <svg width="117" height="70" viewBox="0 0 117 70" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M98 32L0.5 68.5V60.5L115 2L98 32Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--9">
+            <svg width="104" height="80" viewBox="0 0 104 80" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M72 1L0.5 67.5V78.5L102 8.5L72 1Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--10">
+            <svg width="100" height="174" viewBox="0 0 100 174" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M99.5 38.5L18 173H13.5H1L63.5 21.5L99.5 1.5V38.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--11">
+            <svg width="38" height="169" viewBox="0 0 38 169" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M36.5 26.5L11 168.5H1L7 25L23.5 1L36.5 26.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--12">
+            <svg width="146" height="258" viewBox="0 0 146 258" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M102 147.5L144.5 249.5L129 256.5L0.5 19V1.5L28 19L88 147.5H102Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--13">
+            <svg width="146" height="140" viewBox="0 0 146 140" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M112.5 98L145 133.5L139.5 139L1.5 38L6.5 2L42.5 38V51L100 98H112.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--14">
+            <svg width="215" height="106" viewBox="0 0 215 106" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M12.5 24L214 104.5V99L22 1H1L12.5 24Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--15">
+            <svg width="328" height="75" viewBox="0 0 328 75" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M14.5 33.5L327.5 74V65.5L189 33.5L178.5 42L121.5 33.5L115 22.5L1 1L14.5 33.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--16">
+            <svg width="151" height="38" viewBox="0 0 151 38" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1.5 37L150 6V1L8 17L1.5 37Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--17">
+            <svg width="71" height="46" viewBox="0 0 71 46" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M14 45L69.5 11L66.5 1L4 26L1.5 42L14 45Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--18">
+            <svg width="102" height="87" viewBox="0 0 102 87" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M36.5 86L100.5 9L91.5 1.5L1.5 86H36.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--19">
+            <svg width="142" height="279" viewBox="0 0 142 279" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M63 134L134 1.5L141 5L24.5 274.5L1.5 278L67.5 138.5L63 134Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--20">
+            <svg width="55" height="223" viewBox="0 0 55 223" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1 221.5L50.5 0.5H53.5L18.5 210L1 221.5Z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="sun__second">
+          <div class="sun__beam sun__beam--1">
+            <svg width="43" height="172" viewBox="0 0 43 172" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M23 161.5L1 171L34 0.5H41.5L23 161.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--2">
+            <svg width="74" height="329" viewBox="0 0 74 329" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M21.5 191.5L1.5 0.5H7.5L73 307.5L54.5 327.5L49.5 283H44L39 203L21.5 191.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--3">
+            <svg width="272" height="491" viewBox="0 0 272 491" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M123 269L0.5 7.5V2L271 470V489L167.5 306L123 269Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--4">
+            <svg width="270" height="284" viewBox="0 0 270 284" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M9.5 1L269 270.5L263.5 283L224 237.5H195.5L1.5 1H9.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--5">
+            <svg width="295" height="236" viewBox="0 0 295 236" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M224 170.5L9.5 1H1.5L258 235H292.5L224 189.5V170.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--6">
+            <svg width="488" height="238" viewBox="0 0 488 238" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M0.5 1.5L487.5 237L415.5 230L0.5 7.5V1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--7">
+            <svg width="502" height="199" viewBox="0 0 502 199" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M495 185L0.5 1V6L274 129.5L289 122.5L472 198H501L495 185Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--8">
+            <svg width="698" height="163" viewBox="0 0 698 163" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M746 149L0.5 1V7L464 131.5L542 121L752 162L746 149Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--9">
+            <svg width="559" height="85" viewBox="0 0 559 85" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M523.5 46L1 1V8L535.5 83.5L557.5 68L523.5 46Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--10">
+            <svg width="541" height="32" viewBox="0 0 541 32" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M519.5 6L1 1.5V14L539.5 30.5L519.5 6Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--11">
+            <svg width="429" height="49" viewBox="0 0 429 49" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M427 1.5L1 41V48L403 21.5L427 1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--12">
+            <svg width="641" height="235" viewBox="0 0 641 235" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M266 145L0.5 227.5V233.5L503.5 94.5L514 68L633 24L640 1.5L274.5 150.5L266 145Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--13">
+            <svg width="640" height="421" viewBox="0 0 640 421" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M382.5 155.5L2 420H12L639 13.5V1.5L402.5 155.5H382.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--14">
+            <svg width="242" height="300" viewBox="0 0 242 300" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M232 1.5L2 299H9.5L241 33L232 1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--15">
+            <svg width="125" height="313" viewBox="0 0 125 313" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M74 71.5L1 312H9L124 21L107 1L81.5 66.5L74 71.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--16">
+            <svg width="39" height="381" viewBox="0 0 39 381" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1.5 46L8.5 380.5H21L37.5 2L1.5 46Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--17">
+            <svg width="74" height="279" viewBox="0 0 74 279" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1 1L63 278H72.5L32.5 12.5L1 1Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--18">
+            <svg width="256" height="310" viewBox="0 0 256 310" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M138 175.5L242.5 309.5H254.5L13.5 2L1.5 43L125 175.5H138Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--19">
+            <svg width="252" height="216" viewBox="0 0 252 216" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M8.5 36.5L245 214.5L251 207.5L29.5 6L1.5 1.5L8.5 36.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--20">
+            <svg width="415" height="179" viewBox="0 0 415 179" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M172.5 90.5L414 178V167L24 1L1.5 7.5L10 31L102 57.5H119.5L167 80L172.5 90.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--21">
+            <svg width="496" height="40" viewBox="0 0 496 40" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1.5 39L495.5 13.5V1.5L27.5 13.5L1.5 39Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--22">
+            <svg width="262" height="55" viewBox="0 0 262 55" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M72.5 54L255.5 9L260.5 1.5L13.5 36.5L1.5 54L55 45L72.5 54Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--23">
+            <svg width="433" height="131" viewBox="0 0 433 131" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1 130L432 8V1L11.5 101L1 130Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--24">
+            <svg width="430" height="209" viewBox="0 0 430 209" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M229.5 115.5L429 6L422 1.5L11.5 174L1.5 208L229.5 104V115.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--25">
+            <svg width="138" height="107" viewBox="0 0 138 107" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1 105.5L137 9L131.5 1.5L1 83.5V105.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--26">
+            <svg width="454" height="401" viewBox="0 0 454 401" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M182.5 256H203.5L448 1H440L4.5 392L64.5 378L182.5 256Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--27">
+            <svg width="202" height="287" viewBox="0 0 202 287" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M0.5 250.5L191.5 0.5H201L19 275L0.5 285.5V250.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--28">
+            <svg width="328" height="649" viewBox="0 0 328 649" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M152.5 293.5L319.5 1H327L193.5 293.5L173.5 313.5L25.5 641L1 648L162 313.5L152.5 293.5Z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="sun__third">
+          <div class="sun__beam sun__beam--1">
+            <svg width="39" height="399" viewBox="0 0 39 399" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1.5 373L18.5 396.5V373L31.5 360L38 1.5L31.5 2.5L1.5 373Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--2">
+            <svg width="128" height="496" viewBox="0 0 128 496" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M90 494.5L127 438L10.5 1H1.5L90 494.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--3">
+            <svg width="197" height="474" viewBox="0 0 197 474" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M158 473L196 463L11.5 1H1.5L158 473Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--4">
+            <svg width="181" height="338" viewBox="0 0 181 338" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M180.5 336V305L6.5 1.5L1.5 8L133 292L180.5 336Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--5">
+            <svg width="355" height="473" viewBox="0 0 355 473" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M312 460.5L353.5 472L230 308.5V295L10 1L1.5 9L312 460.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--6">
+            <svg width="556" height="616" viewBox="0 0 556 616" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M515 605.5L554 614.5L11 1.5L1.5 9L482 582.5L504.5 588L515 605.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--7">
+            <svg width="599" height="532" viewBox="0 0 599 532" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M555 531H597L14 0.5H1.5L555 531Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--8">
+            <svg width="732" height="443" viewBox="0 0 732 443" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M730 436.5L1 1.5V7.5L690 441.5L730 436.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--9">
+            <svg width="782" height="372" viewBox="0 0 782 372" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M606.5 269L1 1.5V10.5L756 370.5L780.5 359.5L606.5 282V269Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--10">
+            <svg width="636" height="204" viewBox="0 0 636 204" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M634 178L0.5 1V12.5L580.5 202.5L634 178Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--11">
+            <svg width="579" height="85" viewBox="0 0 579 85" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M537.5 23.5L0.5 1V11L560 84L577.5 71L537.5 23.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--12">
+            <svg width="543" height="45" viewBox="0 0 543 45" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M541 1.5L1 34.5V43.5L513.5 29.5L541 1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--13">
+            <svg width="707" height="113" viewBox="0 0 707 113" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M776.5 1.5L1 102V111.5L754 31L776.5 1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--14">
+            <svg width="778" height="113" viewBox="0 0 778 113" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M776 1.5L0.5 102V111.5L753.5 31L776 1.5Z"stroke="black"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--15">
+            <svg width="715" height="351" viewBox="0 0 715 351" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M740.5 1.5L1 339V349.5L769.5 56L779.5 15L740.5 1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--16">
+            <svg width="780" height="351" viewBox="0 0 780 351" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M740 1.5L0.5 339V349.5L769 56L779 15L740 1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--17">
+            <svg width="746" height="444" viewBox="0 0 746 444" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M745 1L0.5 436V443L380 227H393.5L745 17.5V1Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--18">
+            <svg width="298" height="398" viewBox="0 0 298 398" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M252.5 10L0.5 383.5V396.5L259 67.5L252.5 52L296 1.5L252.5 10Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--19">
+            <svg width="236" height="460" viewBox="0 0 236 460" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M208.5 11L0.5 445V457.5L90 300V282.5L234 1L208.5 11Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--20">
+            <svg width="145" height="672" viewBox="0 0 145 672" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1 671L90.5 47L144 1.5L9.5 671H1Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--21">
+            <svg width="42" height="588" viewBox="0 0 42 588" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M7 587.5L1.5 1L24.5 13.5V250L41 268.5L18 587.5H7Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--22">
+            <svg width="129" height="622" viewBox="0 0 129 622" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1 35L121 621.5H127.5L19.5 2L1 35Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--23">
+            <svg width="247" height="589" viewBox="0 0 247 589" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1 28L10 1.5L44 11.5L245.5 588.5H233.5L138.5 349L144 335.5L127.5 297.5H109L1 28Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--24">
+            <svg width="409" height="489" viewBox="0 0 409 489" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M2 0.5H50.5L142 114.5L180 125L408 480.5L403 488L2 0.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--25">
+            <svg width="463" height="417" viewBox="0 0 463 417" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M0.5 27V1.5L461.5 416H447L199 191.5H189.5L0.5 27Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--26">
+            <svg width="563" height="369" viewBox="0 0 563 369" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1 1H30L562.5 352.5V368L13.5 27.5L1 1Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--27">
+            <svg width="657" height="220" viewBox="0 0 657 220" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M7.5 40.5L1.5 1.5L656.5 210V218.5L7.5 40.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--28">
+            <svg width="711" height="118" viewBox="0 0 711 118" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1.5 24L24 1L710 105V116.5L329.5 75L325.5 64L271 58.5L256.5 70L17 44.5L1.5 24Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--29">
+            <svg width="717" height="77" viewBox="0 0 717 77" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M12.5 75.5L1.5 49.5L716 1.5V15.5L12.5 75.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--30">
+            <svg width="678" height="190" viewBox="0 0 678 190" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M677.5 17L1 188.5L15.5 159L232.5 112.5L238.5 102.5L51.5 138.5L29.5 124L677.5 1.5V17Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--31">
+            <svg width="679" height="237" viewBox="0 0 679 237" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M678 1L73 180L1 236.5L678 10.5V1Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--32">
+            <svg width="716" height="306" viewBox="0 0 716 306" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M110.5 280.5L258.5 214L276 195.5L17 304.5L1.5 297L715.5 1V17.5L102.5 297L110.5 280.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--33">
+            <svg width="787" height="423" viewBox="0 0 787 423" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M0.5 394L320.5 243L344 211L778 1.5L785.5 10.5L385.5 211L371 243L0.5 422V394Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--34">
+            <svg width="867" height="546" viewBox="0 0 867 546" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M439 284H459L866 9.5V1.5L2 524L45.5 544.5L439 284Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--35">
+            <svg width="759" height="732" viewBox="0 0 759 732"xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M36 731.5L475 286.5L757 0.5H746.5L8 694.5L1 731.5H36Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--36">
+            <svg width="590" height="743" viewBox="0 0 590 743" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M48 731L330.5 354.5H344L589 1H578.5L121 575L141.5 566.5L1.5 741.5L48 731Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--37">
+            <svg width="436" height="713" viewBox="0 0 436 713" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M47 693L435 1H428.5L1 686V711.5L47 693Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--38">
+            <svg width="353" height="701" viewBox="0 0 353 701" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M342.5 1L150 356L155.5 363L1 658.5L22.5 699.5L352 1H342.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--39">
+            <svg width="244" height="646" viewBox="0 0 244 646" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M120.5 352L134 346.5L243 1H237.5L1 626.5L19.5 645L120.5 352Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--40">
+            <svg width="236" height="698" viewBox="0 0 236 698" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M122 444.5L139.5 427L235 1H227L97 474.5L86 482.5L122 365.5L111.5 373.5L1.5 695.5L62.5 645L122 444.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--41">
+            <svg width="203" height="647" viewBox="0 0 203 647" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M176 12.5L1.5 646H8.5L140 270L132 251.5L202 21L193.5 1.5L176 12.5Z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="sun__forth">
+          <div class="sun__beam sun__beam--1">
+            <svg width="90" height="729" viewBox="0 0 90 729" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M20 457.5L35.5 475.5L65 728.5H88.5L35.5 376H46L14 0.5H1V325L14 333.5L20 457.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--2">
+            <svg width="199" height="786" viewBox="0 0 199 786" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M191 784L1.5 0.5H9.5L191 547L157 604.5L198 771L191 784Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--3">
+            <svg width="387" height="720" viewBox="0 0 387 720" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M385.5 719.5L12.5 0.5H1.5L215.5 475.5L267 513.5L373.5 719.5H385.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--4">
+            <svg width="484" height="776" viewBox="0 0 484 776" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M335.5 485.5L20 0.5H1.5L465.5 775L482.5 758.5L328 511.5L335.5 485.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--5">
+            <svg width="490" height="605" viewBox="0 0 490 605" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M488 603.5L11.5 0.5H1L443 594.5L488 603.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--6">
+            <svg width="739" height="721" viewBox="0 0 739 721" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M737.5 720L4 1.5L1 6.5L583.5 643.5L633 634.5L718.5 720H737.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--7">
+            <svg width="717" height="624" viewBox="0 0 717 624" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M461.5 404.5L1 1.5V11.5L461.5 442H515L715.5 622.5L703.5 576L495 411.5L461.5 404.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--8">
+            <svg width="712" height="467" viewBox="0 0 712 467" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M711 446L12.5 0.5H2.5L711 466V446Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--9">
+            <svg width="781" height="374" viewBox="0 0 781 374" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M780 373.5L1 1.5V8.5L684.5 359.5L780 373.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--10">
+            <svg width="804" height="314" viewBox="0 0 804 314" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M802.5 296L1 1.5V12.5L783 313L802.5 296Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--11">
+            <svg width="836" height="186" viewBox="0 0 836 186" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M833.5 176.5L1 1.5V9.5L475.5 134.5L535 127.5L811.5 185L833.5 176.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--12">
+            <svg width="760" height="90" viewBox="0 0 760 90" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M744 57.5L1 1V10.5L738 89L759 79L744 57.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--13">
+            <svg width="620" height="37" viewBox="0 0 620 37" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M0.5 16L599 1L618.5 25.5L591 35.5L0.5 25.5V16Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--14">
+            <svg width="786" height="75" viewBox="0 0 786 75" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M773 1.5L1 64V74L785 23L773 1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--15">
+            <svg width="789" height="299" viewBox="0 0 789 299" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M466.5 163L1 290L7 298L521 193L605.5 106.5L788 33V1.5L500 125.5L466.5 163Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--16">
+            <svg width="771" height="367" viewBox="0 0 771 367" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M656.5 39.5L0.5 358V366L770.5 21.5V1L666.5 46.5L656.5 39.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--17">
+            <svg width="759" height="496" viewBox="0 0 759 496" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M421 205.5L1 485L15 495L758 23.5L750 1L436.5 213L421 205.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--18">
+            <svg width="766" height="589" viewBox="0 0 766 589" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M765 2L1.5 588H10L765 27.5V2Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--19">
+            <svg width="589" height="751" viewBox="0 0 589 751" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M437 158L1.5 746L4.5 750L588.5 15V2L455.5 158H437Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--20">
+            <svg width="315" height="498" viewBox="0 0 315 498" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M314.5 2L1 491L14 497L314.5 41V2Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--21">
+            <svg width="328" height="709" viewBox="0 0 328 709" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M213.5 250L1.5 708H8.5L327 48.5L297 2L156 332H167L203 250H213.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--22">
+            <svg width="192" height="730" viewBox="0 0 192 730" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M138.5 136L1.5 729H8.5L191 13L185 2L147.5 136H138.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--23">
+            <svg width="115" height="744" viewBox="0 0 115 744" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M54 268L1.5 743H8.5L113.5 55.5L66 2L39 255L54 268Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--24">
+            <svg width="21" height="764" viewBox="0 0 21 764" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1.5 2L13.5 763H19.5L13.5 15L1.5 2Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--25">
+            <svg width="89" height="700" viewBox="0 0 89 700" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1 15.5L78.5 699H88L29.5 15.5L16 1.5L1 15.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--26">
+            <svg width="221" height="758" viewBox="0 0 221 758" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1.5 103.5L211 757H219.5L17.5 1H1.5L43 171H33L11.5 103.5H1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--27">
+            <svg width="429" height="832" viewBox="0 0 429 832" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M62.5 136.5L423 831L428 827L27 0.5H1L68.5 122L62.5 136.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--28">
+            <svg width="560" height="750" viewBox="0 0 560 750" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1 1L550 749L558.5 744L49 1H1Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--29">
+            <svg width="609" height="709" viewBox="0 0 609 709" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1 32.5V1.5L608 699L600.5 708L170.5 230V207L1 32.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--30">
+            <svg width="673" height="589" viewBox="0 0 673 589" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M0.5 21.5V1.5L671.5 580L663.5 588L0.5 21.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--31">
+            <svg width="730" height="482" viewBox="0 0 730 482" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M0.5 12.5V1L729 471L723 481L251.5 203V171.5L0.5 12.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--32">
+            <svg width="750" height="309" viewBox="0 0 750 309" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M259 118.5L749 308V299L45.5 1.5L1 44L246 131.5L259 118.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--33">
+            <svg width="747" height="239" viewBox="0 0 747 239" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M22.5 51.5L5 5.5L2 1L746 223L736 238L232 133.5L217 116L334 144.5V133.5L22.5 51.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--34">
+            <svg width="758" height="131" viewBox="0 0 758 131" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M757 130L346 91L333.5 71.5L248 58.5L215 80L1 65.5L49.5 1L757 111V123"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--35">
+            <svg width="720" height="62" viewBox="0 0 720 62" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M224 54.5L237 36H719V26L36.5 1L1.5 26L36.5 60.5L224 54.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--36">
+            <svg width="734" height="141" viewBox="0 0 734 141" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M9.5 94L247 66.5L261.5 72.5L733 1V13.5L1 139.5L9.5 94Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--37">
+            <svg width="725" height="290" viewBox="0 0 725 290" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M210 173.5L232 135.5L724 1.5V15.5L1.5 288.5L38.5 231L210 173.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--38">
+            <svg width="778" height="348" viewBox="0 0 778 348" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M34.5 347L318.5 216L777.5 12.5V1.5L1 311L34.5 347Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--39">
+            <svg width="731" height="444" viewBox="0 0 731 444" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M724 1.5L21.5 405.5L1.5 442L730 12.5L724 1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--40">
+            <svg width="763" height="586" viewBox="0 0 763 586" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M275.5 371.5H320.5L762 11.5L750 1.5L256 349.5L266.5 354.5L7 550L1 584L275.5 371.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--41">
+            <svg width="633" height="716" viewBox="0 0 633 716" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M292 412L300 353.5L620.5 1.5L631.5 9.5L369.5 307H384.5L546 113.5H556L27 750.5H0.5V731.5L292 412Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--43">
+            <svg width="450" height="739" viewBox="0 0 450 739" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M29 737.5L211.5 431L228.5 424L448.5 0.5H436.5L1 702L29 737.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--44">
+            <svg width="400" height="756" viewBox="0 0 400 756" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M242 321L272.5 298L398.5 0.5H389.5L1.5 755.5H28.5L242 321Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--45">
+            <svg width="288" height="731" viewBox="0 0 288 731" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M94 456.5V470.5L1 730.5H16.5L286.5 0.5H279.5L94 456.5Z"/
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--46">
+            <svg width="97" height="741" viewBox="0 0 97 741" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black" stroke="black">
+            <path d="M38 431.5L47.5 438.5L88 1H95.5L41 739.5L1 710L21 547.5L1 505L7 478L21 505L33.5 399.5L41.5 395.5L38 431.5Z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="sun__back">
+          <div class="sun__beam sun__beam--1">
+            <svg width="59" height="761" viewBox="0 0 59 761" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1.5 759.5L31.5 1H41L57.5 750L1.5 759.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--2">
+            <svg width="151" height="710" viewBox="0 0 151 710" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M138 708.5L149.5 682L20 1H1L108 682L138 708.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--3">
+            <svg width="301" height="824" viewBox="0 0 301 824" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M282.5 823L1 0.5H14L299.5 823H282.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--4">
+            <<svg width="417" height="827" viewBox="0 0 417 827" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M266 626L296 639H307L395.5 826.5H416L14.5 1H1.5L266 626Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--5">
+            <svg width="566" height="802" viewBox="0 0 566 802" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M527 801L1.5 7.5L9 1.5L564.5 801H527Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--6">
+            <svg width="594" height="770" viewBox="0 0 594 770" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1.5 12L559 746L577.5 768.5L592.5 746L13 1L1.5 12Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--7">
+            <svg width="761" height="763" viewBox="0 0 761 763" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1 13.5L712.5 762.5H759.5L1 2V13.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--8">
+            <svg width="739" height="612" viewBox="0 0 739 612" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M622 486.5L1 2V15L738.5 610V591.5L622 503V486.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--9">
+            <svg width="719" height="509" viewBox="0 0 719 509" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M454 359.5L2 1H17L717 508H690.5L482.5 359.5H454Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--10">
+            <svg width="765" height="466" viewBox="0 0 765 466" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M764.5 437L0.5 1.5V14.5L764.5 465V437Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--11">
+            <svg width="813" height="360" viewBox="0 0 813 360" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M811.5 339.5L0.5 1.5V11L800 358.5L811.5 339.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--12">
+            <svg width="867" height="261" viewBox="0 0 867 261" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M865.5 232L0.5 1V12.5L833.5 260L865.5 232Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--13">
+            <svg width="809" height="147" viewBox="0 0 809 147" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M808 123.5L1 1.5V14.5L789.5 146L808 123.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--14">
+            <svg width="846" height="55" viewBox="0 0 846 55" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M832 1.5L0.5 22V39L708 54L723 39H633V22H845L832 1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--15">
+            <svg width="765" height="143" viewBox="0 0 765 143" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M561.5 14.5L0.5 131V142L764.5 27.5V1.5L584 27.5L561.5 14.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--16">
+            <svg width="831" height="268" viewBox="0 0 831 268" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M830 1.5L0.5 251.5V266.5L655.5 67.5L678 78.5L815 45L830 1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--17">
+            <svg width="816" height="316" viewBox="0 0 816 316" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1.5 303.5L656.5 56L801 1.5L814.5 11L11 315L1.5 303.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--18">
+            <svg width="827" height="459" viewBox="0 0 827 459" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M826.5 1.5L0.5 448.5V458L826.5 24V1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--19">
+            <svg width="853" height="565" viewBox="0 0 853 565" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M620.5 119.5H645L834.5 1L851.5 12.5L10.5 564L1 549L620.5 119.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--20">
+            <svg width="880" height="670" viewBox="0 0 880 670" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1.5 669.5L641.5 125L681 138L861 1H878L13 669.5H1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--21">
+            <svg width="748" height="740" viewBox="0 0 748 740" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M2 739L747 1.5V54L480.5 298V328L15 739H2Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--22">
+            <svg width="691" height="750" viewBox="0 0 691 750" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M537 111.5L2 749.5H11.5L689 1H672L462 235.5H447L537 126.5V111.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--23">
+            <svg width="550" height="752" viewBox="0 0 550 752" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M522.5 0.5L1 751.5H14L549 0.5H522.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--24">
+            <svg width="464" height="766" viewBox="0 0 464 766" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M256.5 301L1.5 746L22 764.5L463 25V2.5L290.5 301H256.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--25">
+            <svg width="386" height="749" viewBox="0 0 386 749" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M369.5 1.5L1.5 748.5H11L384.5 16.5L369.5 1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--26">
+            <svg width="289" height="729" viewBox="0 0 289 729" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M177.5 217.5L1 728H12.5L288 43L277 2L194.5 217.5H177.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--27">
+            <svg width="97" height="513" viewBox="0 0 97 513" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M43 39L1.5 512H20.5L95.5 39L76.5 1.5L43 39Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--28">
+            <svg width="69" height="743" viewBox="0 0 69 743" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1.5 310.5L35.5 742H52.5L67.5 1H35.5V367H16.5V320L1.5 310.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--29">
+            <svg width="186" height="755" viewBox="0 0 186 755" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M59 339.5L168 754.5H184.5L25 11L1 1.5L70.5 326.5L59 339.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--30">
+            <svg width="357" height="814" viewBox="0 0 357 814" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1.5 34L345 812.5L356 799.5L104.5 163.5H80L14.5 2L1.5 34Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--31">
+            <svg width="479" height="833" viewBox="0 0 479 833" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M151.5 313.5L470.5 831.5L478 824L14.5 2L1.5 35.5L151.5 287V313.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--32">
+            <svg width="591" height="747" viewBox="0 0 591 747" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M129.5 181.5L572.5 746.5H589.5L51 14.5L2 1L129.5 159V181.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--33">
+            <svg width="706" height="755" viewBox="0 0 706 755" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M0.5 33L691 754H704.5L28.5 12.5L0.5 1V33Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--34">
+            <svg width="750" height="732" viewBox="0 0 750 732" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M172.5 215L733.5 731.5H748.5L13 1.5L1.5 22L172.5 191V215Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--35">
+            <svg width="746" height="637" viewBox="0 0 746 637" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M173 206.5L745.5 636V623L0.5 2V43L173 178V206.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--36">
+            <svg width="782" height="442" viewBox="0 0 782 442" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M348 179.5L781.5 431V440.5L1 97V1.5L198 106.5V134.5L434.5 253V241.5L359.5 200.5L348 179.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--37">
+            <svg width="771" height="213" viewBox="0 0 771 213" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M196 99L770 211.5V196.5L0.5 1.5V63L102 76.5L124.5 63L184.5 76.5L196 99Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--38">
+            <svg width="737" height="63" viewBox="0 0 737 63" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M224 1.5L736.5 46.5V61.5L1 31.5V1.5L203.5 11L224 1.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--39">
+            <svg width="790" height="95" viewBox="0 0 790 95" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M35 93.5L789.5 11V1.5L1.5 54L35 93.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--40">
+            <svg width="764" height="201" viewBox="0 0 764 201" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M125 200L741 22H763.5V1L1.5 185L16.5 200L102.5 174L125 200Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--41">
+            <svg width="808" height="444" viewBox="0 0 808 444" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M0.5 390.5L794.5 0.5H807.5L124.5 362.5L109.5 390.5L0.5 443V390.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--42">
+            <svg width="785" height="564" viewBox="0 0 785 564" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M0.5 538L771.5 1H783L0.5 562.5V538Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--43">
+            <svg width="754" height="635" viewBox="0 0 754 635" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M52 543L740.5 1H752L22 633.5L1 616.5L147.5 492.5V481.5L65 543H52Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--44">
+            <svg width="739" height="747" viewBox="0 0 739 747" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M266.5 497L726 1.5L737.5 12.5L88 746.5H1.5L238 497H266.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--45">
+            <svg width="485" height="702" viewBox="0 0 485 702" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1.5 687.5L472.5 1H483.5L33.5 701L1.5 687.5Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--46">
+            <svg width="432" height="767" viewBox="0 0 432 767" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1 766.5C143 513.833 425.5 7 419.5 1H431L21.5 766.5H1Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--47">
+            <svg width="322" height="748" viewBox="0 0 322 748" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M82.5 539L311.5 7.5L320.5 2L35.5 734L1.5 747L71 580L82.5 569L99.5 525.5L82.5 539Z"/>
+            </svg>
+          </div>
+          <div class="sun__beam sun__beam--48">
+            <svg width="185" height="779" viewBox="0 0 185 779" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke="black">
+            <path d="M1 755L172 0.5H183.5L52 777.5L1 755Z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="akira">
+      <div class="akira__text">
+        <img src="img/title.png" width="991" height="441" alt="Akira">
+      </div>
+      <div class="akira__image">
+        <img src="img/akira.png" width="1440" height="786" alt="Akira sitting on the throne">
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
